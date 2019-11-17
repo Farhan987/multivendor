@@ -1,0 +1,30 @@
+{
+  "name": "multivendor",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "postinstall": "jetifier -r",
+    "test": "jest"
+  },
+  "dependencies": {
+    "native-base": "^2.11.0",
+    "react": "16.6.3",
+    "react-native": "0.58.6",
+    "react-native-gesture-handler": "^1.5.0",
+    "react-native-reanimated": "^1.4.0",
+    "react-native-screens": "^1.0.0-alpha.23",
+    "react-navigation": "^4.0.10"
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.9.0",
+    "jest": "24.9.0",
+    "jetifier": "^1.6.4",
+    "metro-react-native-babel-preset": "0.57.0",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
